@@ -1,0 +1,17 @@
+﻿<Properties StartupConfiguration="{6044704A-00A6-C55C-DD30-0F2C15328DE3}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerController.cs">
+    <Files>
+      <File FileName="Assets/sprites/PlayerController.cs" Line="8" Column="30" />
+      <File FileName="Assets/sprites/TriggerNewTiles.cs" Line="14" Column="6" />
+      <File FileName="Assets/Scripts/CameraFollowPlayer.cs" Line="13" Column="18" />
+      <File FileName="Assets/Scripts/PlayerController.cs" Line="24" Column="9" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

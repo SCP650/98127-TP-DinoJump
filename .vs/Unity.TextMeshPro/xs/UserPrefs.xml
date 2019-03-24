@@ -1,0 +1,10 @@
+﻿<Properties StartupConfiguration="{07A21C90-D344-AE1A-8456-9910C203B41A}|">
+  <MonoDevelop.Ide.ItemProperties.Unity.TextMeshPro PreferredExecutionTarget="Unity.Editor" />
+  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

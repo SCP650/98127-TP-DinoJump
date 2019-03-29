@@ -6,22 +6,36 @@ public class CameraFollowPlayer : MonoBehaviour
 {
     [SerializeField] private Transform _target;
     public float moveSpeed = 2f;
-    public float smoothTIme = 0.2f;
-    private Vector3 _velocity = Vector3.zero;
-    private int _test = 0;
+    public float speedSmoothTIme = 0.2f;
+    public float rotateSpeed = 0.1f;
+    float tar_angle = 0;
 
+    private Vector3 _velocity = Vector3.zero;
+    private void Start()
+    {
+        StartCoroutine(ChangeCarmera());
+    }
     // Update is called once per frame
     void Update()
     {
-        _test++;
         Vector3 targetPos = new Vector3((_target.position.x + moveSpeed*Time.deltaTime), _target.position.y, transform.position.z);
-        transform.position = Vector3.SmoothDamp(transform.position, targetPos, ref _velocity, smoothTIme);
-        if (_test % 1000 == 0)
-        {
+        transform.position = Vector3.SmoothDamp(transform.position, targetPos, ref _velocity, speedSmoothTIme);
+        //transform.rotation = Quaternion.Euler(Vector3.forward * Mathf.SmoothDampAngle(transform.rotation.z, tar_angle, ref rotateSmoothSpeed, rotateSmoothTIme));
+        transform.Rotate(0, 0, tar_angle*rotateSpeed* Time.deltaTime);
+    }
 
-            Debug.Log("trying to transform cameara"+_test);
-            transform.Rotate(0, 0, 20);
-            //transform.Rotate= new Vector3.SmoothDamp(transform.rotation, new Vector3(0,0,100), ref _velocity, smoothTIme);
+    public IEnumerator ChangeCarmera()
+    {
+        while (true)
+        {
+            rotateSpeed = Random.Range(-0.2f,0.2f);
+            int waitTime = Random.Range(3, 10);
+            tar_angle = Random.Range(-180, 180);
+            Debug.Log("trying to transform cameara");
+            yield return new WaitForSeconds(waitTime);
+
+
         }
+
     }
 }

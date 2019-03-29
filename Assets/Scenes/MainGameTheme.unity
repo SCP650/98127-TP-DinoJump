@@ -417,7 +417,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _target: {fileID: 1038611106}
   moveSpeed: 2
-  smoothTIme: 0.2
+  speedSmoothTIme: 0.2
+  rotateSpeed: 0.1
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0

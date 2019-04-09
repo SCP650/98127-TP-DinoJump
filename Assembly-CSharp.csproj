@@ -61,6 +61,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\CameraFollowPlayer.cs" />
+    <Compile Include="Assets\Scripts\Controllers\StartupController.cs" />
+    <Compile Include="Assets\Scripts\Managers\DataManager.cs" />
+    <Compile Include="Assets\Scripts\Managers\GameEvent.cs" />
+    <Compile Include="Assets\Scripts\Managers\IGameManager.cs" />
+    <Compile Include="Assets\Scripts\Managers\Managers.cs" />
+    <Compile Include="Assets\Scripts\Managers\Messager.cs" />
+    <Compile Include="Assets\Scripts\Managers\MissionManager.cs" />
+    <Compile Include="Assets\Scripts\Managers\NetworkService.cs" />
+    <Compile Include="Assets\Scripts\Managers\PlayerManager.cs" />
+    <Compile Include="Assets\Scripts\Managers\StartupEvent.cs" />
+    <Compile Include="Assets\Scripts\Managers\textManager.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\TriggerNewTiles.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">

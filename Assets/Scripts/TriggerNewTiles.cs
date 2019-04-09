@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class TriggerNewTiles : MonoBehaviour
-{
+{   
+
     public GameObject _tile;
     // Start is called before the first frame update
 

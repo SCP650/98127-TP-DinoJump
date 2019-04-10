@@ -6,13 +6,13 @@ using System.IO;
 
 public class DataManager : MonoBehaviour, IGameManager
 {
-
+    public ManagerStatus status { get; private set; }
 
     public List<string> keys = new List<string>();
     public List<string> values = new List<string>();
   
-    private Dictionary<string, string> _temp;
-    public ManagerStatus status { get; private set; }
+    private Dictionary<string, string> _temp = new Dictionary<string, string>();
+
     private string _filename;
     private NetworkService _network;
 
@@ -27,13 +27,18 @@ public class DataManager : MonoBehaviour, IGameManager
     }
 
     public Dictionary<string, string> GetDict()
-    {   int i = -1;
+    {
+        int i = 0;
         foreach (string tested in keys)
-        {   i++;
+        {   
             _temp.Add(tested, values[i]);
+            i++;
         }
         return _temp;
     }
+
+  
+
 
     /*
     public void SaveGameState()

@@ -5,6 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(PlayerManager))]
 [RequireComponent(typeof(MissionManager))]
 [RequireComponent(typeof(DataManager))]
+[RequireComponent(typeof(textManager))]
 
 public class Managers : MonoBehaviour
 { 
@@ -12,6 +13,8 @@ public class Managers : MonoBehaviour
     public static PlayerManager Player { get; private set; }
     public static MissionManager mission { get; private set; }
     public static DataManager dataMana { get; private set; }
+    public static textManager textMana { get; private set; }
+
     private List<IGameManager> _startSequence;
 
     private void Awake()
@@ -20,11 +23,14 @@ public class Managers : MonoBehaviour
         Player = GetComponent<PlayerManager>();
         mission = GetComponent<MissionManager>();
         dataMana = GetComponent<DataManager>();
+        textMana = GetComponent<textManager>();
         _startSequence = new List<IGameManager>();
        
         _startSequence.Add(Player);
         _startSequence.Add(mission);
         _startSequence.Add(dataMana);
+        _startSequence.Add(textMana);
+
         StartCoroutine(StartupManager());
     }
     private IEnumerator StartupManager()

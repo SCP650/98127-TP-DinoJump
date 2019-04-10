@@ -73,6 +73,7 @@
     <Compile Include="Assets\Scripts\Managers\StartupEvent.cs" />
     <Compile Include="Assets\Scripts\Managers\textManager.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\textShown.cs" />
     <Compile Include="Assets\Scripts\TriggerNewTiles.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>/Users/yukaiyang/Desktop/CMU/S19/GCS/98127-TP-DinoJump/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>

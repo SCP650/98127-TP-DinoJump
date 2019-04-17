@@ -9,14 +9,10 @@ public class textShown : MonoBehaviour
     void Start()
     {
 
-        Debug.Log(Managers.textMana.getNextKey());
         text.text = Managers.textMana.getNextKey();
-
+        string[] temp = Managers.textMana.getChoice();
+        Messenger<string[]>.Broadcast(GameEvent.NEXT_WORD,temp);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
 }

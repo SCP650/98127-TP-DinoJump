@@ -21,7 +21,7 @@ public class PlayerController : MonoBehaviour
     public void playerJump()
     {
         _body.AddForce(jumpForce * (Vector2.up), ForceMode2D.Impulse);
-     
+        
 
         transform.Rotate(0, 0, Random.Range(-90f, 90f));
     }

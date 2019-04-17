@@ -9,7 +9,7 @@ public class textManager : MonoBehaviour, IGameManager
     private NetworkService _network;
     private int _len;
     private int _funValue;
-    private string[] _nextChoices;
+    private string[] _nextChoices = new string[3];
     private Dictionary<string,string> _currentDict;
     private List<string> _keys;
     private List<string> _values;

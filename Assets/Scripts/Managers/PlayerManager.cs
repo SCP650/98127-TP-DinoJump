@@ -6,46 +6,31 @@ public class PlayerManager : MonoBehaviour, IGameManager
 {
     public ManagerStatus status { get; private set; }
 
-    public int health { get; private set; }
-    public int maxHealth { get; private set; }
+    public int score { get; private set; }
+
     private NetworkService _network;
+    private GameObject _player;
 
     public void Startup(NetworkService network)
     {
         Debug.Log("Player Manage is starting up...");
         _network = network;
-        UpdataData(50, 100);
+
         status = ManagerStatus.Started;
 
     }
-
-    public void UpdataData(int health, int maxHealth)
+    
+    public void UpdateScore(int deltaScore = 1)
     {
-        this.health = health;
-        this.maxHealth = maxHealth;
+        score += deltaScore;
     }
 
-    public void ChangeHealth(int value)
+    public void PlayerJump()
     {
-        health += value;
-
-        if(health >= maxHealth)
-        {
-            health = maxHealth;
-        }
-        else if(health <= 0)
-        {
-            Messenger.Broadcast(GameEvent.LEVEL_FAILED);
-            health = 0;
-
-        }
-        Debug.Log("Health: " + health + " / " + maxHealth);
-      
+        _player = GameObject.FindWithTag("Player");
+        _player.GetComponent<PlayerController>().playerJump();
     }
-    public void Respawn()
-    {
-        UpdataData(50, 100);
-    }
+
 
 
 }

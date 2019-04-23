@@ -21,4 +21,14 @@ public class choiceShown : MonoBehaviour
     {
         GetComponentInChildren<Text>().text = choices[ButtonNum];
     }
+
+    public void ButtonDown()
+    {   
+        if (Managers.textMana.IsCorrectChoice(ButtonNum))
+        {
+            Debug.Log("true");
+            Managers.Player.PlayerJump();
+        }
+        Debug.Log("False");
+    }
 }

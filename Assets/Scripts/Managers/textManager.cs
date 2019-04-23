@@ -27,7 +27,7 @@ public class textManager : MonoBehaviour, IGameManager
     //return the key that player need to do
     public string getNextKey()
     {
-        _funValue = Random.Range(0, _len-1);
+        _funValue = Random.Range(0, _len);
    
         return _keys[_funValue];
     }
@@ -40,13 +40,13 @@ public class textManager : MonoBehaviour, IGameManager
         int notFun2 = 0;
         while(notFun1 == _funValue)
         {
-            notFun1 = Random.Range(0,_len-1);
+            notFun1 = Random.Range(0,_len);
         }
         string wongAns1 = _values[notFun1];
 
         while (notFun2 == _funValue || notFun2 == notFun1)
         {
-            notFun2 = Random.Range(0, _len - 1);
+            notFun2 = Random.Range(0, _len);
         }
         string wongAns2 = _values[notFun2];
         _nextChoices[0] = rightAns;
@@ -54,7 +54,23 @@ public class textManager : MonoBehaviour, IGameManager
         _nextChoices[2] = wongAns2;
 
         System.Random rnd = new System.Random();
-        return _nextChoices.OrderBy(x => rnd.Next()).ToArray();
+        _nextChoices = _nextChoices.OrderBy(x => rnd.Next()).ToArray();
+        return _nextChoices;
+    }
+
+    public bool IsCorrectChoice(int choice)
+    {
+        return _nextChoices[choice] == _values[_funValue];
+    }
+
+    public string GetCorrectChoice()
+    {
+        return _values[_funValue];
+    }
+
+    public string GetCurrentKey()
+    {
+        return _keys[_funValue];
     }
 
 

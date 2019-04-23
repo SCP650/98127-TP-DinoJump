@@ -63,6 +63,8 @@
     <Compile Include="Assets\Scripts\CameraFollowPlayer.cs" />
     <Compile Include="Assets\Scripts\choiceShown.cs" />
     <Compile Include="Assets\Scripts\Controllers\StartupController.cs" />
+    <Compile Include="Assets\Scripts\deathTrigger.cs" />
+    <Compile Include="Assets\Scripts\GameOverText.cs" />
     <Compile Include="Assets\Scripts\Managers\DataManager.cs" />
     <Compile Include="Assets\Scripts\Managers\GameEvent.cs" />
     <Compile Include="Assets\Scripts\Managers\IGameManager.cs" />
@@ -84,6 +86,12 @@
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
       <HintPath>/Users/yukaiyang/Desktop/CMU/S19/GCS/98127-TP-DinoJump/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Postprocessing.Editor">
+      <HintPath>/Users/yukaiyang/Desktop/CMU/S19/GCS/98127-TP-DinoJump/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Postprocessing.Runtime">
+      <HintPath>/Users/yukaiyang/Desktop/CMU/S19/GCS/98127-TP-DinoJump/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>/Users/yukaiyang/Desktop/CMU/S19/GCS/98127-TP-DinoJump/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>

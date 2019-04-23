@@ -67,7 +67,7 @@ public class CameraFollowPlayer : MonoBehaviour
         {
             rotateSpeed = Random.Range(0.01f,0.2f);
             int waitTime = Random.Range(3, 10);
-            tar_angle = Random.Range(-180, 180);
+            tar_angle = Random.Range(-150, 150);
             tar_rot = Quaternion.Euler(transform.rotation.x, transform.rotation.y, tar_angle);
             Debug.Log("trying to rotate cameara");
             yield return new WaitForSeconds(waitTime);

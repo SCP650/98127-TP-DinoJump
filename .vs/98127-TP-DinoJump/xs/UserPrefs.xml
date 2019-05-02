@@ -1,8 +1,8 @@
 ﻿<Properties StartupConfiguration="{6044704A-00A6-C55C-DD30-0F2C15328DE3}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/CameraFollowPlayer.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GameOverText.cs">
     <Files>
       <File FileName="../../67250/Web Development Project/webdevproject-yang/contact.html" Line="164" Column="4" />
-      <File FileName="Assets/Scripts/CameraFollowPlayer.cs" Line="69" Column="48" />
+      <File FileName="Assets/Scripts/CameraFollowPlayer.cs" Line="70" Column="46" />
       <File FileName="Assets/Scripts/PlayerController.cs" Line="24" Column="9" />
       <File FileName="Assets/Scripts/TriggerNewTiles.cs" Line="17" Column="22" />
       <File FileName="Assets/Scripts/Managers/IGameManager.cs" Line="10" Column="14" />
@@ -15,10 +15,10 @@
       <File FileName="Assets/Scripts/Managers/MissionManager.cs" Line="59" Column="2" />
       <File FileName="Assets/Scripts/Managers/DataManager.cs" Line="29" Column="39" />
       <File FileName="Assets/Scripts/Managers/textManager.cs" Line="73" Column="16" />
-      <File FileName="Assets/Scripts/textShown.cs" Line="15" Column="6" />
+      <File FileName="Assets/Scripts/textShown.cs" Line="12" Column="1" />
       <File FileName="Assets/Scripts/choiceShown.cs" Line="29" Column="1" />
       <File FileName="Assets/Scripts/deathTrigger.cs" Line="14" Column="59" />
-      <File FileName="Assets/Scripts/GameOverText.cs" Line="29" Column="45" />
+      <File FileName="Assets/Scripts/GameOverText.cs" Line="32" Column="29" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

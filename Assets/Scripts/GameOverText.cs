@@ -26,7 +26,7 @@ public class GameOverText : MonoBehaviour
     {
         string key = Managers.textMana.GetCurrentKey();
 
-        string temp = "You Here Killed By \n" + key + "!! \n" + key + " menas " + Managers.textMana.GetCorrectChoice();
+        string temp = "You Here Killed By \n" + key + "!! \n" + key + " means " + Managers.textMana.GetCorrectChoice();
 
 
         youdied.text = temp;
